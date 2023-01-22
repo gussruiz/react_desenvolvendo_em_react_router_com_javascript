@@ -1,5 +1,5 @@
 import styles from "./Banner.module.css";
-import circuloColorido from 'assets/video-2.3/assets/circulo_colorido.png'
+import circuloColorido from 'assets/circulo_colorido.png'
 
 export default function Banner() {
   return (
