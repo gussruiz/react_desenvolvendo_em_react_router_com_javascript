@@ -1,5 +1,7 @@
 import Footer from "components/Footer";
 import PaginaPadrao from "components/PaginaPadrão";
+import NaoEcontrada from "pages/NaoEncontrada";
+import Post from "pages/Post";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
 import Inicio from "./pages/Inicio";
@@ -15,9 +17,10 @@ function AppRoutes() {
         <Route path="/" element={<PaginaPadrao />}>
 			<Route index element={<Inicio />} />
 			<Route path="sobremim" element={<SobreMim />} />
+			<Route path="posts/:id" element={<Post />} />
         </Route>
 
-			<Route path="*" element={<div><h1>Página não encontrada</h1></div>}/>
+			<Route path="*" element={<NaoEcontrada/>}/>
 		</Routes>
 
 		<Footer/>
