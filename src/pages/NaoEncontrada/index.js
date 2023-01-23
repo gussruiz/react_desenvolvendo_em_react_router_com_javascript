@@ -20,7 +20,7 @@ export default function NaoEcontrada(){
                 </p>
 
                 <div className={styles.botaoContainer}>
-                    <button>Voltar</button>
+                    <button className={styles.botaoLer}>Voltar</button>
                 </div>
 
                 <img
